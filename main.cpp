@@ -1,9 +1,21 @@
 #include <iostream>
-using namespace std;
+
+struct Todolist {
+    int id;
+    std::string title;
+};
+
+Todolist todolist;
 
 int main() {
-    cout << "Hello, World!" << endl;
+    todolist.id = 12;
+    todolist.title = "pauline";
+    std::cout
+    << "title:"
+    << todolist.title
+    << std::endl
+    << "id:"
+    << todolist.id;
     return 0;
 }
 
-g
